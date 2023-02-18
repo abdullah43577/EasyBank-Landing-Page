@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="dist/styles.css" />
+    <script defer src="app/script.js"></script>
+    <title>Frontend Mentor | Easybank landing page</title>
+  </head>
+  <body class="h-full w-full">
+    <header class="w-full">
+      <!-- *outer container with 100% width -->
+      <nav class="relative z-[9999] w-full bg-white">
+        <!-- *inner container with mx-auto -->
+        <div
+          class="inner--nav mx-8 flex items-center justify-between bg-white py-4 lg:container lg:mx-auto"
+        >
+          <figure>
+            <img src="./images/logo.svg" alt="logo" />
+          </figure>
+
+          <div class="list--items hidden lg:block">
+            <ul class="flex">
+              <li class="lg:px-3 xl:px-6"><a href="#">Home</a></li>
+              <li class="lg:px-3 xl:px-6"><a href="#">About</a></li>
+              <li class="lg:px-3 xl:px-6"><a href="#">Contact</a></li>
+              <li class="lg:px-3 xl:px-6"><a href="#">Blog</a></li>
+              <li class="lg:px-3 xl:px-6"><a href="#">Careers</a></li>
+            </ul>
+          </div>
+
+          <button
+            class="hidden rounded-full px-5 py-2 font-bold text-white lg:block"
+          >
+            Request Invite
+          </button>
+
+          <div class="burger cursor-pointer lg:hidden">
+            <div class="line1 my-[5px] h-[3px] w-[25px] bg-grayishBlue"></div>
+            <div class="line2 my-[5px] h-[3px] w-[25px] bg-grayishBlue"></div>
+            <div class="line3 my-[5px] h-[3px] w-[25px] bg-grayishBlue"></div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- *hero section outer container -->
+      <div class="hero--section relative w-full bg-white">
+        <!-- *inner container with mx-auto -->
+        <div
+          class="inner-hero--section mx-8 flex max-w-full flex-col-reverse justify-between lg:container lg:mx-auto lg:flex-row"
+        >
+          <div
+            class="hero-left flex flex-col items-center justify-center text-center lg:max-w-[450px] lg:items-start lg:text-left"
+          >
+            <h2 class="text-4xl text-darkBlue lg:text-6xl">
+              Next generation digital banking
+            </h2>
+            <p class="my-6 text-sm text-grayishBlue">
+              Take your financial life online. Your Easybank account will be a
+              one-stop-shop for spending, saving, budgeting, investing, and much
+              more.
+            </p>
+            <button class="rounded-full px-5 py-2 font-bold text-white">
+              Request Invite
+            </button>
+          </div>
+
+          <div class="hero-right relative w-full lg:w-1/2">
+            <figure
+              class="relative z-[5000] lg:translate-x-[100px] lg:translate-y-[-100px]"
+            >
+              <img src="./images/image-mockups.png" alt="image-mockups" />
+            </figure>
+          </div>
+        </div>
+
+        <!-- *background image intro -->
+        <div
+          class="bg_intro absolute top-0 right-0 h-[350px] w-[500px] bg-[url('/images/bg-intro-mobile.svg')] bg-cover sm:h-[500px] lg:h-[650px] lg:w-[650px] lg:translate-y-[-80px] lg:bg-[url('/images/bg-intro-desktop.svg')]"
+        ></div>
+        <!-- <figure class="absolute top-0 right-0 z-[100]">
+              <img src="./images/bg-intro-desktop.svg" alt="bg-intro-desktop" />
+            </figure> -->
+      </div>
+    </header>
+
+    <main></main>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#" target="_blank">Abdullah Ayoola</a>.
+      </div>
+    </footer>
+  </body>
+</html>

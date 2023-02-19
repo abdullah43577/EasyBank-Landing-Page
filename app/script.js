@@ -13,7 +13,7 @@ class Nav {
     // on load of the DOM
     this.hero.classList.remove("translate-y-[200px]");
     this.hero.classList.remove("opacity-0");
-    this.burger.addEventListener("click", this.openMenu.bind(this));
+    this.burger.addEventListener("click", this.toggleMenu.bind(this));
 
     this.sectionObserver = new IntersectionObserver(this.revealSection, {
       root: null,
@@ -26,7 +26,7 @@ class Nav {
     this.sectionObserver.observe(this.articleSect);
   }
 
-  openMenu() {
+  toggleMenu() {
     this.listItems.classList.toggle("show");
     this.burger.classList.toggle("toggle");
   }
